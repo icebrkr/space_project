@@ -1,7 +1,11 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.1)
 project(algorithms_project)
 
+# eqrlier than 3.1
+#add_compile_options(-std=c++11)
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp)
-add_executable(algorithms_project ${SOURCE_FILES})
+add_subdirectory(graph)
+
+add_executable(cut_rod cut_rod.cpp)
+
