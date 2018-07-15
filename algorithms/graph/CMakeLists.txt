@@ -3,6 +3,12 @@ project(graph_project)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES
+        main.cpp
+        BFS.cpp
+        DFS.cpp
+        Graph.cpp
+        MinimumSpanningTree.cpp MinimumSpanningTree.h
+        )
 
 add_executable(graph ${SOURCE_FILES})

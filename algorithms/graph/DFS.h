@@ -131,6 +131,7 @@ private:
     std::vector<int> _f;
     std::vector<int> _parent;
     std::vector<Marker> _marked;
+    using CycleType = std::vector<int>;
 
     void init(const Graph &g){
         _d = std::vector<int>(g.getV());
